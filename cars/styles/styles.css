@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto.ttf");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Robotobold.ttf");
+  font-weight: bold;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 25px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /*чтобы контейнер был по центру страницы */
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+vertical-align: bottom;
+/* убрать базовый отступ для img */
+}
+
+.menu {
+  margin-left: 244px;
+}
+
+.menu ul {
+  list-style: none; /*убрать маркировку списка*/
+
+  display: flex; 
+  /* не в столбец, а в строку элементы */
+}
+
+.menu-item {
+  margin-right: 115px;
+}
+
+.menu-item a {
+font-size: 15px;
+color: #030305;
+text-decoration: none; /* убрать стандартное подчеркивание ссылок*/
+}
+
+.menu-item a:hover {
+  border-bottom: 2px solid black;
+}
+
+.main {
+  background-image: url(../images/background.png);
+background-position: center;
+background-size: cover;
+padding: 104px 0 154px 0;
+}
+
+.main-info {
+  max-width: 855px;
+}
+
+.main-title {
+font-size: 80px;
+font-weight: bold;
+line-height: 110%;
+color: #030305;
+margin-bottom: 40px;
+}
+
+.main-text {
+font-size: 16px;
+line-height: 130%;
+color: #030305;
+margin-bottom: 40px;
+max-width: 502px;
+}
+
+.button {
+padding: 20px;
+gap: 15px;
+width: 334px;
+height: 64px;
+background: #030305;
+border: 0; /*убрать стандартную рамку*/
+box-sizing: border-box; /* чтобы наши отступы входили в наши размеры*/
+text-align: center;
+font-size: 16px;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #FFFFFF;
+font-weight: bold;
+transition: background-color .5s;
+}
+
+.button:hover {
+cursor: pointer;
+background: #575757;
+}
+
+.car {
+  padding: 100px 0 ;
+}
+
+.sub-title {
+  font-weight: bold;
+  font-size: 60px;
+  color: #030305;
+  line-height: 70px;
+}
+
+.car-items {
+display: flex; /*расположение не в столбец, а в строку*/
+flex-wrap: wrap; /* чтобы переносились*/
+align-items: center;
+justify-content: space-between;
+}
+
+.car-item {
+  max-width: 384px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.car-item-image img {
+  vertical-align: bottom; /*чтобы лишних отступов не было*/
+}
+
+.car-item-title {
+  font-weight: bold;
+  font-size: 24px;
+line-height: 150%;
+letter-spacing: 0.02em;
+color: #030305;
+padding: 15px 0 17px 0;
+}
+
+.car-item-info {
+  display: flex; /*чтобы распологались в строку*/
+  align-items: center; /*центрирование по вертикали*/
+  justify-content: center; /*центрирование по горизонтали*/
+}
+
+.car-item-point {
+  width: 110px;
+  height: 92px;
+  margin: 0 7.5px;
+}
+
+.car-item-point img {
+  margin-bottom: 11px;
+}
+
+.car-item-action {
+  margin-top: 13px;
+}
+
+.car-item-action .button {
+  width: 100%;
+  padding: 15px;
+  height: 54px;
+}
+
+.car-item-point > div:nth-child(2) {
+  font-weight: bold;
+}
+/* указываем, что для второго дива, который находится внутри car-item-point, мы сделаем font-weight=bold*/
+
+.price {
+  overflow: hidden; /*картинка на экранах меньше будет скрываться/обрезаться*/
+}
+
+.price .container {
+position: relative; /* для того, тобы смещать картинку относительно нашего контейнера*/
+padding-bottom: 121px;
+}
+
+.price .subtitle {
+  margin-bottom: 20px;
+}
+
+.price-text {
+  font-size: 16px;
+  line-height: 130%;
+/* identical to box height, or 21px */
+color: #5D5D5F;
+margin-bottom: 60px;
+}
+
+.price-form {
+  max-width: 344px;
+}
+
+.price-input {
+padding: 22px 18px;
+gap: 10px;
+width: 344px;
+height: 65px;
+background: #FFFFFF;
+border: 1px solid #5D5D5F;
+box-sizing: border-box;
+font-size: 16px;
+color: #000000;
+outline: none; /* убирает обводку браузерную при работе с элементом*/
+margin-bottom: 15px;
+}
+
+.price-input::placeholder {
+  color: #5D5D5F;
+}
+
+.price .button {
+  width: 100%;
+}
+
+.price-image {
+  position: absolute;
+  bottom: 0;
+  left: 401px;
+}
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 25px 0;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rights {
+  font-size: 15px;
+  color: #030305;
+}
